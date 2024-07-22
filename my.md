@@ -39,6 +39,7 @@ uname -a 或者 uname -a|awk -F""'{print$(NF-1)}'
    ```.zshrc
    export JAVA_HOME=/Users/foo/workapps/jdk12/jdk-11.0.2.jdk/Contents/Home   #指定一个JAVA_HOME的路径
    export PATH=$JAVA_HOME/bin:$PATH    #将刚刚指定的路径追加到环境变量的路径中
+   #这样子分2句写的目的是为了，在配置文件上可以保存多个“JAVA_HOME”这样子只需要切换第二句的“=$JAVA_HOME”就好了
    ```
 
    再执行echo $PATH查看 如下
